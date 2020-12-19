@@ -28,5 +28,5 @@ urlpatterns = [
     )),
     path('<int:model_id>/', Methods(
         GET=ExampleController.get_specific_view,
-    ))
+    )),
 ]

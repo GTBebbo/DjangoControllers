@@ -8,6 +8,9 @@ It enables the ability to define specific view functions for each method in a pa
 and will gracefully return 405 Method Not Allowed Response with a populated
 "Allow" header based on the methods defined ion the path
 
+Additionally, unless otherwise defined, ``OPTIONS`` requests will be responded to automatically
+and ``HEAD`` requests will call the ``GET`` view if defined and only return the view's headers.
+
 Detailed documentation is in the "docs" directory.
 
 Why Use DjangoControllers over Django's Class based Views?
